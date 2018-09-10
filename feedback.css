@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Concert+One|Francois+One|Gamja+Flower|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Copse|Coustard|Concert+One|Francois+One|Gamja+Flower|Work+Sans|Fredericka+the+Great');
 body{
 	background-image: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 128, 128));
+	display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card{
 	margin: 0 auto;
+	margin-top: 30px;
 	background-color:rgba(245, 245, 245, 0.4);
 	opacity: 1;
 	border-radius: 50px;
@@ -20,16 +24,21 @@ body{
 	font-family: 'Francois One', sans-serif;
 	font-size: 3rem;
 }
+hr{
+	color: black;
+	background-color: black;
+}
 .card-text{
 	text-align: center;
 	font-family: 'Francois One', sans-serif;
 	font-size: 0.8rem;
 }
 .question{
+	padding-top: 10px;
 	list-style-type: disc;
-	font-family: 'Gamja Flower', cursive;
-	font-size: 1.6em;
-
+	font-family: 'Copse', serif;
+	font-size: 1.4em;
+	color: black;
 }
 
 .choice{
@@ -102,6 +111,9 @@ input:checked + .slider:before {
 }
 .rating{
 	direction: rtl;
+	margin-top: -20px;
+	font-size: 2em;
+	margin-left: 10px;
 }
 
 .rating > span {
@@ -117,3 +129,11 @@ input:checked + .slider:before {
    position: absolute;
 }
 
+input{
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+
+.contain{
+	margin-left: 10px;
+}
