@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Francois+One|Gamja+Flower|Work+Sans');
+body{
+	background-image: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 128, 128));
+}
+.card{
+	margin: 0 auto;
+	background-color:rgba(245, 245, 245, 0.4);
+	opacity: 1;
+	border-radius: 50px;
+	font-weight: bold;
+}
+
+.card-body{
+	margin: 0 auto;
+	box-shadow: 0 0 10px #000000;
+	border-radius: 50px;
+}
+.card-title{
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+	font-size: 3rem;
+}
+.card-text{
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+	font-size: 0.8rem;
+}
+.question{
+	list-style-type: disc;
+	font-family: 'Gamja Flower', cursive;
+	font-size: 1.6em;
+
+}
+
+.choice{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-family: 'Concert One', cursive;
+	font-size: 1.6rem;
+	font-style: blue;
+	transition: color 0.5s ease;
+  color: rgb(255, 19, 19);
+}
+.choice:hover{
+	color:rgb(255, 255, 19);
+	transition: color 0.1s;
+}
+.contain{
+	display: inline-flex;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:green;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: red;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px red;
+}
+
+input:checked + .slider:before {
+
+  
+  transform: translateX(24px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.option{
+	height: 40px;
+	width: 500px;
+}
+.rating{
+	direction: rtl;
+}
+
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+}
+
+.rating > span:hover ~ span:before,.rating > span:hover:before
+ {
+ 	background: yellow;
+   content: "\2605";
+   position: absolute;
+}
+
